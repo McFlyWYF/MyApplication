@@ -29,6 +29,8 @@ import com.google.gson.GsonBuilder;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import java.util.List;
+
 
 public class ReadActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -85,195 +87,194 @@ public class ReadActivity extends AppCompatActivity implements View.OnClickListe
             }
         });
 
-        /*
-        // 通用文字识别(高精度版)
-        findViewById(R.id.accurate_basic_button).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (!checkTokenStatus()) {
-                    return;
-                }
-                Intent intent = new Intent(MainActivity.this, CameraActivity.class);
-                intent.putExtra(CameraActivity.KEY_OUTPUT_FILE_PATH,
-                        FileUtil.getSaveFile(getApplication()).getAbsolutePath());
-                intent.putExtra(CameraActivity.KEY_CONTENT_TYPE,
-                        CameraActivity.CONTENT_TYPE_GENERAL);
-                startActivityForResult(intent, REQUEST_CODE_ACCURATE_BASIC);
-            }
-        });
+//        // 通用文字识别(高精度版)
+//        findViewById(R.id.accurate_basic_button).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                if (!checkTokenStatus()) {
+//                    return;
+//                }
+//                Intent intent = new Intent(MainActivity.this, CameraActivity.class);
+//                intent.putExtra(CameraActivity.KEY_OUTPUT_FILE_PATH,
+//                        FileUtil.getSaveFile(getApplication()).getAbsolutePath());
+//                intent.putExtra(CameraActivity.KEY_CONTENT_TYPE,
+//                        CameraActivity.CONTENT_TYPE_GENERAL);
+//                startActivityForResult(intent, REQUEST_CODE_ACCURATE_BASIC);
+//            }
+//        });
+//
+//        // 通用文字识别（含位置信息版）
+//        findViewById(R.id.general_button).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                if (!checkTokenStatus()) {
+//                    return;
+//                }
+//                Intent intent = new Intent(MainActivity.this, CameraActivity.class);
+//                intent.putExtra(CameraActivity.KEY_OUTPUT_FILE_PATH,
+//                        FileUtil.getSaveFile(getApplication()).getAbsolutePath());
+//                intent.putExtra(CameraActivity.KEY_CONTENT_TYPE,
+//                        CameraActivity.CONTENT_TYPE_GENERAL);
+//                startActivityForResult(intent, REQUEST_CODE_GENERAL);
+//            }
+//        });
+//
+//        // 通用文字识别（含位置信息高精度版）
+//        findViewById(R.id.accurate_button).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                if (!checkTokenStatus()) {
+//                    return;
+//                }
+//                Intent intent = new Intent(MainActivity.this, CameraActivity.class);
+//                intent.putExtra(CameraActivity.KEY_OUTPUT_FILE_PATH,
+//                        FileUtil.getSaveFile(getApplication()).getAbsolutePath());
+//                intent.putExtra(CameraActivity.KEY_CONTENT_TYPE,
+//                        CameraActivity.CONTENT_TYPE_GENERAL);
+//                startActivityForResult(intent, REQUEST_CODE_ACCURATE);
+//            }
+//        });
+//
+//        // 通用文字识别（含生僻字版）
+//        findViewById(R.id.general_enhance_button).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                if (!checkTokenStatus()) {
+//                    return;
+//                }
+//                Intent intent = new Intent(MainActivity.this, CameraActivity.class);
+//                intent.putExtra(CameraActivity.KEY_OUTPUT_FILE_PATH,
+//                        FileUtil.getSaveFile(getApplication()).getAbsolutePath());
+//                intent.putExtra(CameraActivity.KEY_CONTENT_TYPE,
+//                        CameraActivity.CONTENT_TYPE_GENERAL);
+//                startActivityForResult(intent, REQUEST_CODE_GENERAL_ENHANCED);
+//            }
+//        });
+//
+//        // 网络图片识别
+//        findViewById(R.id.general_webimage_button).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                if (!checkTokenStatus()) {
+//                    return;
+//                }
+//                Intent intent = new Intent(MainActivity.this, CameraActivity.class);
+//                intent.putExtra(CameraActivity.KEY_OUTPUT_FILE_PATH,
+//                        FileUtil.getSaveFile(getApplication()).getAbsolutePath());
+//                intent.putExtra(CameraActivity.KEY_CONTENT_TYPE,
+//                        CameraActivity.CONTENT_TYPE_GENERAL);
+//                startActivityForResult(intent, REQUEST_CODE_GENERAL_WEBIMAGE);
+//            }
+//        });
+//
+//        // 身份证识别
+//        findViewById(R.id.idcard_button).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                if (!checkTokenStatus()) {
+//                    return;
+//                }
+//                Intent intent = new Intent(MainActivity.this, IDCardActivity.class);
+//                startActivity(intent);
+//            }
+//        });
+//
+//        // 银行卡识别
+//        findViewById(R.id.bankcard_button).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                if (!checkTokenStatus()) {
+//                    return;
+//                }
+//                Intent intent = new Intent(MainActivity.this, CameraActivity.class);
+//                intent.putExtra(CameraActivity.KEY_OUTPUT_FILE_PATH,
+//                        FileUtil.getSaveFile(getApplication()).getAbsolutePath());
+//                intent.putExtra(CameraActivity.KEY_CONTENT_TYPE,
+//                        CameraActivity.CONTENT_TYPE_BANK_CARD);
+//                startActivityForResult(intent, REQUEST_CODE_BANKCARD);
+//            }
+//        });
+//
+//        // 行驶证识别
+//        findViewById(R.id.vehicle_license_button).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                if (!checkTokenStatus()) {
+//                    return;
+//                }
+//                Intent intent = new Intent(MainActivity.this, CameraActivity.class);
+//                intent.putExtra(CameraActivity.KEY_OUTPUT_FILE_PATH,
+//                        FileUtil.getSaveFile(getApplication()).getAbsolutePath());
+//                intent.putExtra(CameraActivity.KEY_CONTENT_TYPE,
+//                        CameraActivity.CONTENT_TYPE_GENERAL);
+//                startActivityForResult(intent, REQUEST_CODE_VEHICLE_LICENSE);
+//            }
+//        });
+//
+//        // 驾驶证识别
+//        findViewById(R.id.driving_license_button).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                if (!checkTokenStatus()) {
+//                    return;
+//                }
+//                Intent intent = new Intent(MainActivity.this, CameraActivity.class);
+//                intent.putExtra(CameraActivity.KEY_OUTPUT_FILE_PATH,
+//                        FileUtil.getSaveFile(getApplication()).getAbsolutePath());
+//                intent.putExtra(CameraActivity.KEY_CONTENT_TYPE,
+//                        CameraActivity.CONTENT_TYPE_GENERAL);
+//                startActivityForResult(intent, REQUEST_CODE_DRIVING_LICENSE);
+//            }
+//        });
+//
+//        // 车牌识别
+//        findViewById(R.id.license_plate_button).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                if (!checkTokenStatus()) {
+//                    return;
+//                }
+//                Intent intent = new Intent(MainActivity.this, CameraActivity.class);
+//                intent.putExtra(CameraActivity.KEY_OUTPUT_FILE_PATH,
+//                        FileUtil.getSaveFile(getApplication()).getAbsolutePath());
+//                intent.putExtra(CameraActivity.KEY_CONTENT_TYPE,
+//                        CameraActivity.CONTENT_TYPE_GENERAL);
+//                startActivityForResult(intent, REQUEST_CODE_LICENSE_PLATE);
+//            }
+//        });
+//
+//        // 营业执照识别
+//        findViewById(R.id.business_license_button).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                if (!checkTokenStatus()) {
+//                    return;
+//                }
+//                Intent intent = new Intent(MainActivity.this, CameraActivity.class);
+//                intent.putExtra(CameraActivity.KEY_OUTPUT_FILE_PATH,
+//                        FileUtil.getSaveFile(getApplication()).getAbsolutePath());
+//                intent.putExtra(CameraActivity.KEY_CONTENT_TYPE,
+//                        CameraActivity.CONTENT_TYPE_GENERAL);
+//                startActivityForResult(intent, REQUEST_CODE_BUSINESS_LICENSE);
+//            }
+//        });
+//
+//        // 通用票据识别
+//        findViewById(R.id.receipt_button).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                if (!checkTokenStatus()) {
+//                    return;
+//                }
+//                Intent intent = new Intent(MainActivity.this, CameraActivity.class);
+//                intent.putExtra(CameraActivity.KEY_OUTPUT_FILE_PATH,
+//                        FileUtil.getSaveFile(getApplication()).getAbsolutePath());
+//                intent.putExtra(CameraActivity.KEY_CONTENT_TYPE,
+//                        CameraActivity.CONTENT_TYPE_GENERAL);
+//                startActivityForResult(intent, REQUEST_CODE_RECEIPT);
+//            }
+//        });
 
-        // 通用文字识别（含位置信息版）
-        findViewById(R.id.general_button).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (!checkTokenStatus()) {
-                    return;
-                }
-                Intent intent = new Intent(MainActivity.this, CameraActivity.class);
-                intent.putExtra(CameraActivity.KEY_OUTPUT_FILE_PATH,
-                        FileUtil.getSaveFile(getApplication()).getAbsolutePath());
-                intent.putExtra(CameraActivity.KEY_CONTENT_TYPE,
-                        CameraActivity.CONTENT_TYPE_GENERAL);
-                startActivityForResult(intent, REQUEST_CODE_GENERAL);
-            }
-        });
-
-        // 通用文字识别（含位置信息高精度版）
-        findViewById(R.id.accurate_button).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (!checkTokenStatus()) {
-                    return;
-                }
-                Intent intent = new Intent(MainActivity.this, CameraActivity.class);
-                intent.putExtra(CameraActivity.KEY_OUTPUT_FILE_PATH,
-                        FileUtil.getSaveFile(getApplication()).getAbsolutePath());
-                intent.putExtra(CameraActivity.KEY_CONTENT_TYPE,
-                        CameraActivity.CONTENT_TYPE_GENERAL);
-                startActivityForResult(intent, REQUEST_CODE_ACCURATE);
-            }
-        });
-
-        // 通用文字识别（含生僻字版）
-        findViewById(R.id.general_enhance_button).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (!checkTokenStatus()) {
-                    return;
-                }
-                Intent intent = new Intent(MainActivity.this, CameraActivity.class);
-                intent.putExtra(CameraActivity.KEY_OUTPUT_FILE_PATH,
-                        FileUtil.getSaveFile(getApplication()).getAbsolutePath());
-                intent.putExtra(CameraActivity.KEY_CONTENT_TYPE,
-                        CameraActivity.CONTENT_TYPE_GENERAL);
-                startActivityForResult(intent, REQUEST_CODE_GENERAL_ENHANCED);
-            }
-        });
-
-        // 网络图片识别
-        findViewById(R.id.general_webimage_button).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (!checkTokenStatus()) {
-                    return;
-                }
-                Intent intent = new Intent(MainActivity.this, CameraActivity.class);
-                intent.putExtra(CameraActivity.KEY_OUTPUT_FILE_PATH,
-                        FileUtil.getSaveFile(getApplication()).getAbsolutePath());
-                intent.putExtra(CameraActivity.KEY_CONTENT_TYPE,
-                        CameraActivity.CONTENT_TYPE_GENERAL);
-                startActivityForResult(intent, REQUEST_CODE_GENERAL_WEBIMAGE);
-            }
-        });
-
-        // 身份证识别
-        findViewById(R.id.idcard_button).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (!checkTokenStatus()) {
-                    return;
-                }
-                Intent intent = new Intent(MainActivity.this, IDCardActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        // 银行卡识别
-        findViewById(R.id.bankcard_button).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (!checkTokenStatus()) {
-                    return;
-                }
-                Intent intent = new Intent(MainActivity.this, CameraActivity.class);
-                intent.putExtra(CameraActivity.KEY_OUTPUT_FILE_PATH,
-                        FileUtil.getSaveFile(getApplication()).getAbsolutePath());
-                intent.putExtra(CameraActivity.KEY_CONTENT_TYPE,
-                        CameraActivity.CONTENT_TYPE_BANK_CARD);
-                startActivityForResult(intent, REQUEST_CODE_BANKCARD);
-            }
-        });
-
-        // 行驶证识别
-        findViewById(R.id.vehicle_license_button).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (!checkTokenStatus()) {
-                    return;
-                }
-                Intent intent = new Intent(MainActivity.this, CameraActivity.class);
-                intent.putExtra(CameraActivity.KEY_OUTPUT_FILE_PATH,
-                        FileUtil.getSaveFile(getApplication()).getAbsolutePath());
-                intent.putExtra(CameraActivity.KEY_CONTENT_TYPE,
-                        CameraActivity.CONTENT_TYPE_GENERAL);
-                startActivityForResult(intent, REQUEST_CODE_VEHICLE_LICENSE);
-            }
-        });
-
-        // 驾驶证识别
-        findViewById(R.id.driving_license_button).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (!checkTokenStatus()) {
-                    return;
-                }
-                Intent intent = new Intent(MainActivity.this, CameraActivity.class);
-                intent.putExtra(CameraActivity.KEY_OUTPUT_FILE_PATH,
-                        FileUtil.getSaveFile(getApplication()).getAbsolutePath());
-                intent.putExtra(CameraActivity.KEY_CONTENT_TYPE,
-                        CameraActivity.CONTENT_TYPE_GENERAL);
-                startActivityForResult(intent, REQUEST_CODE_DRIVING_LICENSE);
-            }
-        });
-
-        // 车牌识别
-        findViewById(R.id.license_plate_button).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (!checkTokenStatus()) {
-                    return;
-                }
-                Intent intent = new Intent(MainActivity.this, CameraActivity.class);
-                intent.putExtra(CameraActivity.KEY_OUTPUT_FILE_PATH,
-                        FileUtil.getSaveFile(getApplication()).getAbsolutePath());
-                intent.putExtra(CameraActivity.KEY_CONTENT_TYPE,
-                        CameraActivity.CONTENT_TYPE_GENERAL);
-                startActivityForResult(intent, REQUEST_CODE_LICENSE_PLATE);
-            }
-        });
-
-        // 营业执照识别
-        findViewById(R.id.business_license_button).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (!checkTokenStatus()) {
-                    return;
-                }
-                Intent intent = new Intent(MainActivity.this, CameraActivity.class);
-                intent.putExtra(CameraActivity.KEY_OUTPUT_FILE_PATH,
-                        FileUtil.getSaveFile(getApplication()).getAbsolutePath());
-                intent.putExtra(CameraActivity.KEY_CONTENT_TYPE,
-                        CameraActivity.CONTENT_TYPE_GENERAL);
-                startActivityForResult(intent, REQUEST_CODE_BUSINESS_LICENSE);
-            }
-        });
-
-        // 通用票据识别
-        findViewById(R.id.receipt_button).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (!checkTokenStatus()) {
-                    return;
-                }
-                Intent intent = new Intent(MainActivity.this, CameraActivity.class);
-                intent.putExtra(CameraActivity.KEY_OUTPUT_FILE_PATH,
-                        FileUtil.getSaveFile(getApplication()).getAbsolutePath());
-                intent.putExtra(CameraActivity.KEY_CONTENT_TYPE,
-                        CameraActivity.CONTENT_TYPE_GENERAL);
-                startActivityForResult(intent, REQUEST_CODE_RECEIPT);
-            }
-        });
-        */
 
 
         // 请选择您的初始化方式
@@ -321,20 +322,29 @@ public class ReadActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void alertText(final String title, final String message) {
+        Log.d("ReadActivity", "alertText: hello");
         this.runOnUiThread(new Runnable() {
             @Override
             public void run() {
                 Log.d("ReadActivity","message" + message);
                 try {
-                    JSONObject jsonObject = new JSONObject(message);
+                    /*JSONObject jsonObject = new JSONObject(message);
                     String result = jsonObject.getString("words_result");
                     Log.d("ReadActivity","id is " + result);
 
                     result.replace("[","");
                     result.replace("]","");
 
+                    Log.d("ReadActivity", "run: replace"+result);
+                        show.setText(result);*/
 
-                        show.setText(result);
+                    Toast.makeText(ReadActivity.this, message, Toast.LENGTH_SHORT).show();
+                    List<OCRJSon.WordsResultBean> words_result = new Gson().fromJson(message, OCRJSon.class).getWords_result();
+                    for (int i = 0; i < words_result.size(); i++) {
+                        String word = words_result.get(i).getWords();
+                        show.setText(word + "  ");
+                    }
+
                 }catch (Exception e){
                     e.printStackTrace();
                 }
