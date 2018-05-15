@@ -71,14 +71,15 @@
                         <ImageView
                             android:id="@+id/see"
                             android:layout_width="match_parent"
-                            android:layout_height="100dp"
+                            android:layout_height="150dp"
                             android:background="@color/colorPrimary"/>
 
                         <ImageView
                             android:id="@+id/read"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="@color/main_darkyellow_color"/>
+                            android:layout_height="150dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/colorPrimary"/>
                     </LinearLayout>
 
                 </LinearLayout>

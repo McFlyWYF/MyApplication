@@ -187,7 +187,7 @@
     <color name="chat_time">@color/color_bai</color>
     <color name="chat_history_time_text">@color/color_shenhui</color>
     <color name="semi_transparent_w">#7fffffff</color>
-
+    <color name="colorWhite">#FFFFFF</color>
 
 
 
