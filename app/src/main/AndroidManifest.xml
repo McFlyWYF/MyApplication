@@ -43,6 +43,7 @@
         <activity android:name=".ReadActivity"/>
         <activity android:name=".TranslateActivity"/>
         <activity android:name=".SignActivity"/>
+        <activity android:name=".CameraActivity1"/>
     </application>
 
 </manifest>

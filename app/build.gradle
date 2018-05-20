@@ -35,4 +35,18 @@ dependencies {
     implementation files('libs/ocr-sdk.jar')
     compile files('libs/ocr-sdk.jar')
     compile project(path: ':ocr_ui')
+    implementation 'com.github.guohaiyang1992:PermissionHelper:1.2'
+    implementation files('libs/Msc.jar')
+}
+
+dependencies {
+    implementation 'org.tensorflow:tensorflow-android:+'
+}
+
+dependencies {
+    implementation 'com.android.support.constraint:constraint-layout:+'
+}
+
+dependencies {
+    implementation 'com.android.support.constraint:constraint-layout:+'
 }

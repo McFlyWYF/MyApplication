@@ -94,11 +94,11 @@ public class ReadActivity extends AppCompatActivity implements View.OnClickListe
 //                if (!checkTokenStatus()) {
 //                    return;
 //                }
-//                Intent intent = new Intent(MainActivity.this, CameraActivity.class);
-//                intent.putExtra(CameraActivity.KEY_OUTPUT_FILE_PATH,
+//                Intent intent = new Intent(MainActivity.this, CameraActivity1.class);
+//                intent.putExtra(CameraActivity1.KEY_OUTPUT_FILE_PATH,
 //                        FileUtil.getSaveFile(getApplication()).getAbsolutePath());
-//                intent.putExtra(CameraActivity.KEY_CONTENT_TYPE,
-//                        CameraActivity.CONTENT_TYPE_GENERAL);
+//                intent.putExtra(CameraActivity1.KEY_CONTENT_TYPE,
+//                        CameraActivity1.CONTENT_TYPE_GENERAL);
 //                startActivityForResult(intent, REQUEST_CODE_ACCURATE_BASIC);
 //            }
 //        });
@@ -110,11 +110,11 @@ public class ReadActivity extends AppCompatActivity implements View.OnClickListe
 //                if (!checkTokenStatus()) {
 //                    return;
 //                }
-//                Intent intent = new Intent(MainActivity.this, CameraActivity.class);
-//                intent.putExtra(CameraActivity.KEY_OUTPUT_FILE_PATH,
+//                Intent intent = new Intent(MainActivity.this, CameraActivity1.class);
+//                intent.putExtra(CameraActivity1.KEY_OUTPUT_FILE_PATH,
 //                        FileUtil.getSaveFile(getApplication()).getAbsolutePath());
-//                intent.putExtra(CameraActivity.KEY_CONTENT_TYPE,
-//                        CameraActivity.CONTENT_TYPE_GENERAL);
+//                intent.putExtra(CameraActivity1.KEY_CONTENT_TYPE,
+//                        CameraActivity1.CONTENT_TYPE_GENERAL);
 //                startActivityForResult(intent, REQUEST_CODE_GENERAL);
 //            }
 //        });
@@ -126,11 +126,11 @@ public class ReadActivity extends AppCompatActivity implements View.OnClickListe
 //                if (!checkTokenStatus()) {
 //                    return;
 //                }
-//                Intent intent = new Intent(MainActivity.this, CameraActivity.class);
-//                intent.putExtra(CameraActivity.KEY_OUTPUT_FILE_PATH,
+//                Intent intent = new Intent(MainActivity.this, CameraActivity1.class);
+//                intent.putExtra(CameraActivity1.KEY_OUTPUT_FILE_PATH,
 //                        FileUtil.getSaveFile(getApplication()).getAbsolutePath());
-//                intent.putExtra(CameraActivity.KEY_CONTENT_TYPE,
-//                        CameraActivity.CONTENT_TYPE_GENERAL);
+//                intent.putExtra(CameraActivity1.KEY_CONTENT_TYPE,
+//                        CameraActivity1.CONTENT_TYPE_GENERAL);
 //                startActivityForResult(intent, REQUEST_CODE_ACCURATE);
 //            }
 //        });
@@ -142,11 +142,11 @@ public class ReadActivity extends AppCompatActivity implements View.OnClickListe
 //                if (!checkTokenStatus()) {
 //                    return;
 //                }
-//                Intent intent = new Intent(MainActivity.this, CameraActivity.class);
-//                intent.putExtra(CameraActivity.KEY_OUTPUT_FILE_PATH,
+//                Intent intent = new Intent(MainActivity.this, CameraActivity1.class);
+//                intent.putExtra(CameraActivity1.KEY_OUTPUT_FILE_PATH,
 //                        FileUtil.getSaveFile(getApplication()).getAbsolutePath());
-//                intent.putExtra(CameraActivity.KEY_CONTENT_TYPE,
-//                        CameraActivity.CONTENT_TYPE_GENERAL);
+//                intent.putExtra(CameraActivity1.KEY_CONTENT_TYPE,
+//                        CameraActivity1.CONTENT_TYPE_GENERAL);
 //                startActivityForResult(intent, REQUEST_CODE_GENERAL_ENHANCED);
 //            }
 //        });
@@ -158,11 +158,11 @@ public class ReadActivity extends AppCompatActivity implements View.OnClickListe
 //                if (!checkTokenStatus()) {
 //                    return;
 //                }
-//                Intent intent = new Intent(MainActivity.this, CameraActivity.class);
-//                intent.putExtra(CameraActivity.KEY_OUTPUT_FILE_PATH,
+//                Intent intent = new Intent(MainActivity.this, CameraActivity1.class);
+//                intent.putExtra(CameraActivity1.KEY_OUTPUT_FILE_PATH,
 //                        FileUtil.getSaveFile(getApplication()).getAbsolutePath());
-//                intent.putExtra(CameraActivity.KEY_CONTENT_TYPE,
-//                        CameraActivity.CONTENT_TYPE_GENERAL);
+//                intent.putExtra(CameraActivity1.KEY_CONTENT_TYPE,
+//                        CameraActivity1.CONTENT_TYPE_GENERAL);
 //                startActivityForResult(intent, REQUEST_CODE_GENERAL_WEBIMAGE);
 //            }
 //        });
@@ -186,11 +186,11 @@ public class ReadActivity extends AppCompatActivity implements View.OnClickListe
 //                if (!checkTokenStatus()) {
 //                    return;
 //                }
-//                Intent intent = new Intent(MainActivity.this, CameraActivity.class);
-//                intent.putExtra(CameraActivity.KEY_OUTPUT_FILE_PATH,
+//                Intent intent = new Intent(MainActivity.this, CameraActivity1.class);
+//                intent.putExtra(CameraActivity1.KEY_OUTPUT_FILE_PATH,
 //                        FileUtil.getSaveFile(getApplication()).getAbsolutePath());
-//                intent.putExtra(CameraActivity.KEY_CONTENT_TYPE,
-//                        CameraActivity.CONTENT_TYPE_BANK_CARD);
+//                intent.putExtra(CameraActivity1.KEY_CONTENT_TYPE,
+//                        CameraActivity1.CONTENT_TYPE_BANK_CARD);
 //                startActivityForResult(intent, REQUEST_CODE_BANKCARD);
 //            }
 //        });
@@ -202,11 +202,11 @@ public class ReadActivity extends AppCompatActivity implements View.OnClickListe
 //                if (!checkTokenStatus()) {
 //                    return;
 //                }
-//                Intent intent = new Intent(MainActivity.this, CameraActivity.class);
-//                intent.putExtra(CameraActivity.KEY_OUTPUT_FILE_PATH,
+//                Intent intent = new Intent(MainActivity.this, CameraActivity1.class);
+//                intent.putExtra(CameraActivity1.KEY_OUTPUT_FILE_PATH,
 //                        FileUtil.getSaveFile(getApplication()).getAbsolutePath());
-//                intent.putExtra(CameraActivity.KEY_CONTENT_TYPE,
-//                        CameraActivity.CONTENT_TYPE_GENERAL);
+//                intent.putExtra(CameraActivity1.KEY_CONTENT_TYPE,
+//                        CameraActivity1.CONTENT_TYPE_GENERAL);
 //                startActivityForResult(intent, REQUEST_CODE_VEHICLE_LICENSE);
 //            }
 //        });
@@ -218,11 +218,11 @@ public class ReadActivity extends AppCompatActivity implements View.OnClickListe
 //                if (!checkTokenStatus()) {
 //                    return;
 //                }
-//                Intent intent = new Intent(MainActivity.this, CameraActivity.class);
-//                intent.putExtra(CameraActivity.KEY_OUTPUT_FILE_PATH,
+//                Intent intent = new Intent(MainActivity.this, CameraActivity1.class);
+//                intent.putExtra(CameraActivity1.KEY_OUTPUT_FILE_PATH,
 //                        FileUtil.getSaveFile(getApplication()).getAbsolutePath());
-//                intent.putExtra(CameraActivity.KEY_CONTENT_TYPE,
-//                        CameraActivity.CONTENT_TYPE_GENERAL);
+//                intent.putExtra(CameraActivity1.KEY_CONTENT_TYPE,
+//                        CameraActivity1.CONTENT_TYPE_GENERAL);
 //                startActivityForResult(intent, REQUEST_CODE_DRIVING_LICENSE);
 //            }
 //        });
@@ -234,11 +234,11 @@ public class ReadActivity extends AppCompatActivity implements View.OnClickListe
 //                if (!checkTokenStatus()) {
 //                    return;
 //                }
-//                Intent intent = new Intent(MainActivity.this, CameraActivity.class);
-//                intent.putExtra(CameraActivity.KEY_OUTPUT_FILE_PATH,
+//                Intent intent = new Intent(MainActivity.this, CameraActivity1.class);
+//                intent.putExtra(CameraActivity1.KEY_OUTPUT_FILE_PATH,
 //                        FileUtil.getSaveFile(getApplication()).getAbsolutePath());
-//                intent.putExtra(CameraActivity.KEY_CONTENT_TYPE,
-//                        CameraActivity.CONTENT_TYPE_GENERAL);
+//                intent.putExtra(CameraActivity1.KEY_CONTENT_TYPE,
+//                        CameraActivity1.CONTENT_TYPE_GENERAL);
 //                startActivityForResult(intent, REQUEST_CODE_LICENSE_PLATE);
 //            }
 //        });
@@ -250,11 +250,11 @@ public class ReadActivity extends AppCompatActivity implements View.OnClickListe
 //                if (!checkTokenStatus()) {
 //                    return;
 //                }
-//                Intent intent = new Intent(MainActivity.this, CameraActivity.class);
-//                intent.putExtra(CameraActivity.KEY_OUTPUT_FILE_PATH,
+//                Intent intent = new Intent(MainActivity.this, CameraActivity1.class);
+//                intent.putExtra(CameraActivity1.KEY_OUTPUT_FILE_PATH,
 //                        FileUtil.getSaveFile(getApplication()).getAbsolutePath());
-//                intent.putExtra(CameraActivity.KEY_CONTENT_TYPE,
-//                        CameraActivity.CONTENT_TYPE_GENERAL);
+//                intent.putExtra(CameraActivity1.KEY_CONTENT_TYPE,
+//                        CameraActivity1.CONTENT_TYPE_GENERAL);
 //                startActivityForResult(intent, REQUEST_CODE_BUSINESS_LICENSE);
 //            }
 //        });
@@ -266,11 +266,11 @@ public class ReadActivity extends AppCompatActivity implements View.OnClickListe
 //                if (!checkTokenStatus()) {
 //                    return;
 //                }
-//                Intent intent = new Intent(MainActivity.this, CameraActivity.class);
-//                intent.putExtra(CameraActivity.KEY_OUTPUT_FILE_PATH,
+//                Intent intent = new Intent(MainActivity.this, CameraActivity1.class);
+//                intent.putExtra(CameraActivity1.KEY_OUTPUT_FILE_PATH,
 //                        FileUtil.getSaveFile(getApplication()).getAbsolutePath());
-//                intent.putExtra(CameraActivity.KEY_CONTENT_TYPE,
-//                        CameraActivity.CONTENT_TYPE_GENERAL);
+//                intent.putExtra(CameraActivity1.KEY_CONTENT_TYPE,
+//                        CameraActivity1.CONTENT_TYPE_GENERAL);
 //                startActivityForResult(intent, REQUEST_CODE_RECEIPT);
 //            }
 //        });

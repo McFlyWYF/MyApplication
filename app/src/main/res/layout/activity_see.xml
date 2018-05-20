@@ -20,27 +20,44 @@
             android:layout_gravity="center"/>
     </LinearLayout>
 
-
-    <LinearLayout
+    <TextView
+        android:id="@+id/predict_tv"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:orientation="horizontal"
-        android:layout_marginTop="390dp">
+        android:layout_height="100dp" />
 
-        <ImageView
-            android:id="@+id/most_like"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/slidecam"
-            android:layout_alignParentBottom="true"/>
+    <Button
+        android:id="@+id/_predict_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Camera"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Most Likely : "
-            android:textSize="20sp"
-            android:textColor="#ffff"
-            android:layout_marginTop="390dp"/>
+    <Button
+        android:id="@+id/camera_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Camera"/>
 
-    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_marginTop="390dp">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/most_like"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/slidecam"-->
+            <!--android:layout_alignParentBottom="true"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Most Likely : "-->
+            <!--android:textSize="20sp"-->
+            <!--android:textColor="#ffff"-->
+            <!--android:layout_marginTop="390dp"/>-->
+
+    <!--</LinearLayout>-->
 </LinearLayout>
