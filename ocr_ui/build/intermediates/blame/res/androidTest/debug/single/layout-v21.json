@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "E:\\EnglishPlay\\MyApplication\\ocr_ui\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\16500\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.1.aar\\845a03aba7ebed3e0e390e917d5e7f89\\res\\layout-v21\\notification_action.xml"
+    },
+    {
+        "merged": "E:\\EnglishPlay\\MyApplication\\ocr_ui\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\16500\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.1.aar\\845a03aba7ebed3e0e390e917d5e7f89\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "E:\\EnglishPlay\\MyApplication\\ocr_ui\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\16500\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.1.aar\\845a03aba7ebed3e0e390e917d5e7f89\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "E:\\EnglishPlay\\MyApplication\\ocr_ui\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\16500\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.1.aar\\845a03aba7ebed3e0e390e917d5e7f89\\res\\layout-v21\\notification_template_icon_group.xml"
+    }
+]
